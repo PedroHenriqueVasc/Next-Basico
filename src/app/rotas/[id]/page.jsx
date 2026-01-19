@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link'
+
 import { useParams } from 'next/navigation' // Utilizar para rotas dinâmicas
 
 
@@ -11,6 +13,9 @@ export default function buscar(){
     return (
         <div>
            <span>Rotas / {id} / Buscar</span>
+           <Link href={'/rotas'}>
+                <button>Voltar</button>
+           </Link>
         </div>
     )
 }
